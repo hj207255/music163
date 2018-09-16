@@ -22,6 +22,9 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2.7vw;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 header .topsvg{
 	width: 37.9vw;
@@ -41,7 +44,12 @@ header .download{
 }
 .navbar{
 	height: 10.7vw;
+	width: 100%;
 	border-bottom: 1px solid #F4F4F4;
+	background: #fff;
+	position: fixed;
+    top: 64px;
+    left: 0;
 }
 .navbar .navbar-container{
 	display: flex;
@@ -72,7 +80,7 @@ header .download{
 	color: #d33a31
 }
 main{
-	padding-top: 5.3vw;
+	padding-top: 32.3vw;
 }
 main .main-title{
 	font-size: 4.53vw;
@@ -83,9 +91,94 @@ main .main-title{
 	border-left: 0.53vw solid #d33a31;
 }
 main .recommend{
+	margin-bottom: 6.4vw;
+}
+main .recommend ul{
 	display: flex;
-	
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+main .recommend li{
+	display: block;
+	width: 32.768vw;
+	padding-bottom: 4.267vw;
 }
 main .recommend li img{
 	width: 32.768vw;
+	vertical-align: top;
+}
+main .recommend li span{
+	display: block;
+	width: 32.768vw;
+	font-size: 3.467vw;
+	line-height: 1.2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient: vertical;
+	padding: 1.6vw 0.533vw 0 1.6vw;
+}
+main .newest .newest-row{
+	padding: 1.6vw 0;
+	margin-left: 2.667vw;
+	border-bottom: 1px solid #F0F0F0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .newest .newest-row .newest-row2{
+	display: flex;
+	align-items: center;
+}
+main .newest .newest-row .newest-row1{
+	font-size: 4.53vw;
+	line-height: 1.5;
+}
+main .newest .newest-row .newest-row2{
+	font-size: 3.2vw;
+	color: #888;
+}
+main .newest .newest-row .newest-row-1 .sq{
+	display: inline-block;
+	width: 3.2vw;
+	height: 2.13vw;
+	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
+	background-size: 44.267vw 25.867vw;
+	margin-right: 1.07vw;
+}
+main .newest .newest-row .newest-row-2{
+	width: 5.9vw;
+	height: 5.9vw;
+	margin-right: 2.67vw;
+	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
+	background-size: 44.267vw 25.867vw;
+	background-position: -6.4vw 0vw;
+}
+footer{
+	background: url(../images/home-page-imgs/recommand_bg_2x.png) no-repeat;
+}
+footer .logo {
+	text-align: center;
+	padding-top: 16.9%;
+}
+footer .logo .logosvg{
+	width: 61.33vw;
+	height: 11.73vw;
+}
+footer .openapp{
+	font-size: 4.26vw;
+	line-height: 10.13vw;
+	border: 1px solid #d33a31;
+	border-radius: 10.13vw;
+	text-align: center;
+	color: #d33a31;
+	margin: 4vw 9.87vw 1.33vw;
+}
+footer .copyright{
+	font-size: 3.2vw;
+	line-height: 4.27vw;
+	transform: scale(.75);
+	text-align: center;
+	padding-bottom: 5.33vw;
 }
