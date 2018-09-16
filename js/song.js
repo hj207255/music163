@@ -1,6 +1,6 @@
 $(function(){
-	$.get('//hj207255.github.io/lyric.json').then(function(object){
-		let {lyric}=object
+	$.get('/lyric.json').then(function(object){
+		let lyric=object
 		let array=lyric.split('\n')
 		let regex=/^\[(.+)\](.*)$/
 		array=array.map(function(string,index){
