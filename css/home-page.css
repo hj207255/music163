@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+*::after, *::before{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+li{
+	list-style: none;
+}
+
+header{
+	width: 100%;
+	background-color: #D43C33;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2.7vw;
+}
+header .topsvg{
+	width: 37.9vw;
+	height: 6.7vw;
+	margin: 5.2vw 0;
+}
+header .download{
+	display: inline-block;
+	font-size: 4vw;
+	height: 8vw;
+	line-height: 8vw;
+	border: 1px solid #E7948F;
+	border-radius: 8vw;
+	padding: 0 2.7vw;
+	color: #fff;
+	padding-bottom: 1vw;
+}
+.navbar{
+	height: 10.7vw;
+	border-bottom: 1px solid #F4F4F4;
+}
+.navbar .navbar-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar .navbar-container li{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+}
+.navbar .navbar-container li .navbar-text-container{
+	display: inline-block;
+	height: 100%;
+}
+.navbar .navbar-container li .navbar-text{
+	display: inline-block;
+	height: 10.7vw;
+	font-size: 4vw;
+	line-height: 10.7vw;
+	padding: 0 1.33vw;
+}
+.navbar .navbar-container li.active .navbar-text-container{
+	border-bottom: 2px solid #d33a31;
+}
+.navbar .navbar-container li.active .navbar-text{
+	color: #d33a31
+}
+main{
+	padding-top: 5.3vw;
+}
+main .main-title{
+	font-size: 4.53vw;
+	font-weight: 400;
+	margin-bottom: 3.73vw;
+	line-height: 5.33vw;
+	padding-left: 2.4vw;
+	border-left: 0.53vw solid #d33a31;
+}
+main .recommend{
+	display: flex;
+	
+}
+main .recommend li img{
+	width: 32.768vw;
+}
