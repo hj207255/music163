@@ -4,28 +4,22 @@ $(function(){
 	$.get('./songs.json').then(function(response){
 		let $songs=response
 		let $song=$songs.filter((i)=>{return i.id===id})
-		console.log($song[0].url)
 		let audio=document.createElement('audio')
 		audio.src=$song[0].url
 		audio.oncanplay=function(){
 			audio.play()
 		}
-		$('.mask').on('click',function(){
-			if(!audio.paused){
-				audio.pause()
-				$('.record').addClass('playing')
-				$('.mask>img').addClass('playing')
-			}else{
-				audio.play()
-				$('.record').removeClass('playing')
-				$('.mask>img').removeClass('playing')
-			}
-		})
-	})
 
+		$('#name').text($song[0].name)
+		$('#author').text($song[0].author)
+		let $img=$(`
+			<img class="songbg" src='${$song[0].songbg}'>
+			`)
+		$img.appendTo('.record')
 
-	$.get('./lyric.json').then(function(object){
-		let {lyric}=object
+		$('.music-song').css('background-image','url('+$song[0].background+')')
+
+		let lyric=$song[0].lyric
 		let array=lyric.split('\n')
 		let regex=/^\[(.+)\](.*)$/
 		array=array.map(function(string,index){
@@ -41,18 +35,37 @@ $(function(){
 			$p.attr('data-time',object.time).text(object.words)
 			$p.appendTo($lyric)
 		})
+
+		$('.mask').on('click',function(){
+			if(!audio.paused){
+				audio.pause()
+				$('.record').addClass('playing')
+				$('.mask>img').addClass('playing')
+			}else{
+				audio.play()
+				$('.record').removeClass('playing')
+				$('.mask>img').removeClass('playing')
+			}
+		})
+
+
+		// setInterval(function(){
+		// 	let second=audio.currentTime
+		// 	let munite=~~(second/60)
+		// 	let csecond=second-(munite*60)
+		// 	munite=munite<=10?'0'+munite:munite
+		// 	csecond=csecond<=10?'0'+csecond:csecond
+		// 	let time=`${munite}:${csecond}`
+		// 	let $ps=$('.lyric-inner-cover>p')
+		// 	for(let i=0;i<$ps.length;i++){
+		// 		if($ps.eq(i).attr('data-time')<time&&$ps.eq(i+1).attr('data-time')>time){
+		// 			$ps.eq(i)
+		// 		}
+		// 	}
+		// },1000)
 	})
 
 
 
-	// let $lyric1=$('.lyric-inner-cover');
-	// let n=0
-	// setInterval(function(){
-	// 	if(n<55){
-	// 		let s=8.5*n
-	// 		$lyric1.css({transform:'translateY(-'+s+'vw)'})
-	// 		n=n+1
-	// 	}
-	// },100)
 })
 

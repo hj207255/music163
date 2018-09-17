@@ -1,72 +1,102 @@
 [
 	{
 		"id":"1",
-		"url":"./music/1.mp3",
-		"name":"相信",
-		"author":"苏打绿",
-		"album":"相信"
+		"url":"./music/温顺的猫.mp3",
+		"name":"温顺的猫",
+		"author":"伍嘉成",
+		"album":"温顺的猫",
+		"songbg":"./images/song-imgs/songs/温顺的猫.webp",
+		"background":"./images/song-imgs/songs/温顺的猫.jpg",
+		"lyric":"[00:00.00] 作曲 : Frans Walfridsson*/Breman Glenmark/Olof Lindskog/Gavin Ragnar Brynmor Jones*/Josefin Glenmark*/Ollipop*/Frans Walfridsson\n[00:00.681] 作词 : Frans Walfridsson*/Breman Glenmark/Olof Lindskog/Gavin Ragnar/Brynmor Jones*/Josefin Glenmark*/Ollipop*/Frans Walfridsson/伍嘉成\n[00:02.43]编曲制作：Ollipop\n[00:02.73]\n[00:04.11]爱\n[00:06.10]捕捉你的动态\n[00:08.10]就像是现在\n[00:10.02]你看着我\n[00:11.22]我看着你\n[00:12.34]so why\n[00:14.86]对我不理睬\n[00:16.71]像一个小孩\n[00:18.79]两小无猜\n[00:19.90]思绪抛开\n[00:21.45]当你觉得累\n[00:23.32]就甩开\n[00:25.62]当寂寞爬上来\n[00:27.66]你又想重来\n[00:30.13]我只想对着窗外发呆\n[00:34.21]and I just wanna sleep\n[00:36.61]只想做只温顺的猫\n[00:40.10]蹭蹭 抱抱 撒娇\n[00:43.10]只想讨你欢笑\n[00:46.01]（只想做只温顺的猫）\n[00:48.54]放空 睡觉 打闹\n[00:51.77]不想被人打扰\n[00:54.47]（只想做只温顺的猫）\n[01:05.10]温顺的猫\n[01:10.98]\n[01:14.10]乖\n[01:15.81]是自由的王牌\n[01:17.90]外面的精彩\n[01:19.69]盯着门外\n[01:21.12]想逃离现在\n[01:22.60]but why\n[01:24.54]总觉得怪怪\n[01:26.50]原来是不舍\n[01:28.63]得对你不理睬\n[01:31.41]九条命的我与生俱来\n[01:35.04]但只有一颗心\n[01:38.63]只想做只温顺的猫\n[01:40.88]蹭蹭 抱抱 撒娇\n[01:44.11]只想讨你欢笑\n[01:46.87]（只想做只温顺的猫）\n[01:49.63]放空 睡觉 打闹\n[01:52.83]不想被人打扰\n[01:55.64]（只想做只温顺的猫）\n[02:58.11][02:06.01]温顺的猫\n[02:07.71]\n[02:11.01]O～\n[02:12.50]\n[02:18.38]wu～O～\n[02:20.62]\n[02:22.22]只想做只温顺的猫（Wu）\n[02:24.68]蹭蹭 抱抱 撒娇\n[02:27.67]只想讨你欢笑（只想要你欢笑）\n[02:31.10]只想做只温顺的猫\n[02:33.33]放空 睡觉 打闹\n[02:36.29]不想被人打扰 （不想，被打扰，wu～o～）\n[02:39.88]只想做只温顺的猫\n[02:53.23]（只想你打扰）\n[02:49.55]温顺的猫\n"
 	},
 	{
 		"id":"2",
-		"url":"./music/2.mp3",
-		"name":"小苹果",
-		"author":"筷子兄弟",
-		"album":"小苹果"
+		"url":"./music/醒来.mp3",
+		"name":"醒来",
+		"author":"臧鸿飞",
+		"album":"醒来",
+		"songbg":"./images/song-imgs/songs/醒来.webp",
+		"background":"./images/song-imgs/songs/醒来.jpg",
+		"lyric":"[00:00.00] 作曲 : 臧鸿飞\n[00:01.00] 作词 : 臧鸿飞\n[00:12.78]编曲 王磊\n[00:16.45]\n[01:36.29][00:16.94]点杯最烈的苦艾\n[01:38.92][00:19.36]人的一生原本没有应该\n[01:42.29][00:22.42]我才不像你会假装正派\n[01:45.53][00:26.03]在酒杯里旋转天生自在\n[01:49.18][00:29.03]\n[01:49.48][00:29.55]夜晚邂逅的意外\n[01:50.94][00:31.50]把烦恼都抛开\n[01:52.45][00:32.91]天旋地转和无奈\n[01:54.05][00:34.52]别害怕失态\n[01:55.79][00:36.22]霓虹飞舞的可爱\n[01:57.33][00:38.14]高谈阔论的无赖\n[01:59.04][00:39.61]也许大脑在作怪\n[02:00.69][00:41.21]无聊的时代\n[02:02.25][00:42.78]\n[02:03.05][00:43.16]别期待他们许诺的现在\n[02:05.88][00:46.49]别相信他们虚构的未来\n[02:09.01][00:49.65]未来也许比现在更坏\n[02:12.41][00:53.01]该醒的时候我才会醒来\n[02:15.63][00:56.34]\n[02:34.43][02:21.21][01:15.02][01:01.29]比现在更坏\n[02:40.60][02:27.56][01:19.58][01:08.28]我才会醒来\n[02:44.05][02:29.17][01:25.12][01:09.69]\n[02:56.73]制作人 牛牧、王磊\n"
 	},
 	{
 		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"url":"./music/Tranz.mp3",
+		"name":"Tranz",
+		"author":"Gorillaz",
+		"album":"Tranz",
+		"songbg":"./images/song-imgs/songs/Tranz.webp",
+		"background":"./images/song-imgs/songs/Tranz.jpg",
+		"lyric":"[by:Trap_Girl]\n[00:18.33]Oscillate yourself tonight\n[00:21.57]When you're in your bed\n[00:25.17]Assimilate the dopamine\n[00:29.08]Passing through your head\n[00:31.68]When you get back on a Saturday night\n[00:34.88]And the room is caving in\n[00:38.67]Do you look like me, do you feel like me\n[00:42.17]Do you turn into your effigy?\n[00:46.02]Do you dance like this?\n[00:49.61]Forever\n[00:51.01]\n[01:00.71]See yourself with Cupid's lake\n[01:03.95]Chipped in your head\n[01:07.05]Do you indicate to the satellites\n[01:10.85]Passing by the edge\n[01:14.54]When you get back on a Saturday night\n[01:17.59]And your head is caving in\n[01:21.08]Do you look like me, do you feel like me\n[01:24.54]Do you turn into your effigy?\n[01:28.23]Do you dance like this?\n[01:32.01]Forever\n[01:35.31]Do you dance like this?\n[01:38.96]Forever\n[01:40.10]\n[01:57.59]Do you look like me\n[01:59.29]Do you burn like me\n[02:00.73]Do you look like me\n[02:01.93]Do you burn like me\n[02:03.93]Do you look like me\n[02:05.58]Do you burn like me\n[02:07.43]Do you turn into your effigy?\n[02:11.02]Do you dance like this?\n[02:13.20]Do you dance like this?\n[02:15.34]Forever\n[02:16.84]Do you live like this?\n[02:18.95]Do you dance like this?\n[02:20.20]Do you dance like this?\n[02:21.90]Do you dance like this?\n[02:23.54]Do you dance like this?\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"4",
+		"url":"./music/奇妙能力歌.mp3",
+		"name":"奇妙能力歌",
+		"author":"陈粒",
+		"album":"奇妙能力歌",
+		"songbg":"./images/song-imgs/songs/奇妙能力歌.webp",
+		"background":"./images/song-imgs/songs/奇妙能力歌.jpg",
+		"lyric":"[00:00.00] 作曲 : 陈粒\n[00:00.679] 作词 : 陈粒\n[00:02.38]奇妙能力歌 声活版\n[00:03.38]Remix制作人：陈粒\n[00:04.38]音频剪辑：麦丽素天儿\n[00:05.38]\n[00:06.38]（旁白：天空中下起了雨 而我）\n[00:19.27]我看过沙漠下暴雨\n[00:23.30]看过大海亲吻鲨鱼\n[00:27.12]看过黄昏追逐黎明\n[00:30.20]没看过你\n[00:34.52]我知道美丽会老去\n[00:38.33]生命之外还有生命\n[00:41.73]我知道风里有诗句\n[00:45.33]不知道你\n[00:49.70]我听过荒芜变成热闹\n[00:53.97]听过尘埃掩埋城堡\n[00:57.82]听过天空拒绝飞鸟\n[01:00.58]没听过你\n[01:05.28]我明白眼前都是气泡\n[01:09.52]安静的才是苦口良药\n[01:12.79]明白什么才让我骄傲\n[01:15.92]不明白你\n[01:20.64]我拒绝更好更圆的月亮\n[01:24.44]拒绝未知的疯狂\n[01:28.51]拒绝声色的张扬\n[01:31.31]不拒绝你\n[01:35.76]我变成荒凉的景象\n[01:39.73]变成无所谓的模样\n[01:43.96]变成透明的高墙\n[01:46.60]没能变成你\n[02:21.89]我听过空境的回音\n[02:26.08]雨水浇绿孤山岭\n[02:29.77]听过被诅咒的秘密\n[02:32.73]没听过你\n[02:37.11]我抓住散落的欲望\n[02:41.07]缱绻的馥郁让我紧张\n[02:45.08]我抓住世间的假象\n[02:48.10]没抓住你\n[02:52.70]我包容六月清泉结冰\n[02:56.25]包容不老的生命\n[03:00.45]包容世界的迟疑\n[03:03.60]没包容你\n[03:07.96]我忘了置身濒绝孤岛\n[03:12.31]忘了眼泪不过失效药\n[03:15.80]忘了百年无声口号\n[03:18.73]没能忘记你\n[03:23.85]我想要更好更圆的月亮\n[03:27.25]想要未知的疯狂\n[03:31.20]想要声色的张扬\n[03:34.36]我想要你\n[03:38.36]\n[03:42.45]Presented By Levi’s®\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"5",
+		"url":"./music/错过不错.mp3",
+		"name":"错过不错",
+		"author":"邓紫棋",
+		"album":"另一个童话",
+		"songbg":"./images/song-imgs/songs/错过不错.webp",
+		"background":"./images/song-imgs/songs/错过不错.jpg",
+		"lyric":"[00:00.00] 作曲 : G.E.M. 邓紫棋/Lupo Groinig\n[00:00.693] 作词 : G.E.M. 邓紫棋\n[00:02.81]编曲： Lupo Groinig\n[00:03.47]\n[00:04.14]\n[00:10.88]你向左  我向右  开始就反着方向走\n[00:15.95]你随意  你自由  我偏偏爱跟着步骤\n[00:21.09]你爱吃  猪羊牛  我三餐都少盐无油\n[00:26.35]你天生  爱浪游  我偏偏安定就足够\n[00:30.85]\n[00:31.83]我早听说你来自第四颗星球\n[00:37.12]而我甘于平凡安于地球\n[00:42.37]那一双勉强的手  早就该放手\n[00:47.70]就别再回头  从今以后\n[00:52.37]忘了我  别难过\n[00:57.22]坦白说  这不过  是一种解脱\n[01:02.28]忘了我  别执着\n[01:07.80]你和我  的错过  真的并不错\n[01:11.75]\n[01:24.10]相爱过  再错过  只能说上帝太幽默\n[01:29.03]这一刻  再寂寞  也不过一时的脆弱\n[01:34.21]你生活  少了我  不就能更加的自我\n[01:39.57]我生活  少了你  才能够少一点颠簸\n[01:43.97]\n[01:45.11]不是说男人来自第四颗星球\n[01:50.22]何必为我而屈就在地球\n[01:55.47]不是说你面前有  无边的宇宙\n[02:00.67]就别再回头  从今以后\n[02:03.98]\n[02:05.33]忘了我  别难过\n[02:10.32]坦白说  这不过  是一种解脱\n[02:15.52]忘了我  别执着\n[02:20.99]你和我  的错过  真的并不错\n[02:25.95]\n[02:37.08]那天真的承诺  就一笑而过\n[02:41.65]拿得起你也放得了我\n[02:47.51]\n[02:49.73]忘了我  别难过\n[02:54.96]坦白说  这不过  是一种解脱\n[03:00.05]忘了我  别执着\n[03:05.21]你和我  的错过  真的并不错\n[03:09.35]\n[03:12.81]忘了我  别再难过\n[03:20.14]忘了我  忘了过往一切的对错\n[03:30.75]忘了我  祝你我从此好好生活  重新的生活\n[03:43.28]\n[03:44.13]监制：Lupo Groinig\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"6",
+		"url":"./music/贫穷或富有.mp3",
+		"name":"贫穷或富有",
+		"author":"李荣浩",
+		"album":"贫穷或富有",
+		"songbg":"./images/song-imgs/songs/贫穷或富有.webp",
+		"background":"./images/song-imgs/songs/贫穷或富有.jpg",
+		"lyric":"[00:00.00] 作曲 : 李荣浩\n[00:01.00] 作词 : 李荣浩\n[00:08.28]编曲Arrangement：李荣浩Ronghao Li\n[00:12.62]\n[00:22.81]\n[02:08.09][00:29.08]聊生活方式\n[02:10.70][00:31.86]聊各种日子\n[02:13.68][00:34.63]还有面包可以吃\n[02:19.96][00:40.44]别人的想法只是个想法\n[02:25.47][00:46.64]有好有坏 又笨又傻\n[02:34.14][00:55.05]都是这么想 这么想 这么想\n[02:39.85][01:01.11]可以看起来不伟大 却要善良\n[02:46.31][01:07.27]要尝过时间给过的挫败\n[02:52.38][01:13.48]才能够变得坦然\n[03:45.84][02:57.81][01:18.96]都是这么想 这么想 这么想\n[03:52.05][03:03.92][01:24.90]可以微笑着自弹自唱\n[03:55.62][03:07.74][01:28.88]保持勇敢\n[03:58.49][03:10.28][01:31.27]也许有一天能遇上几个能说话的伴\n[04:04.69][03:28.18][03:16.79][01:37.79]贫穷的\n[04:07.73][03:33.90][03:19.55][01:40.80]富有的\n[04:16.55][03:22.74][01:43.72]都算\n[04:21.91]\n[04:25.54]制作人Producer：李荣浩Ronghao Li\n[04:27.91]吉他Guitars：李荣浩Ronghao Li\n[04:30.09]贝斯Bass：李荣浩Ronghao Li\n[04:31.56]鼓Drums：荒井十一Arai Soichiro\n[04:33.33]录音师Recording Engineer：李荣浩Ronghao Li\n[04:34.93]混音师Mixing Engineer：李荣浩Ronghao Li\n[04:36.59]录音室Recording Studio：北京一样音乐录音室Beijing Young Music Studio\n[04:38.07]混音室Mixing Studio：北京一样音乐录音室Beijing Young Music Studio\n[04:39.51]母带后期制作人Mastering Producer：李荣浩Ronghao Li\n[04:40.95]母带后期处理工程师Mastering Engineer：周天澈TC Z.\n[04:42.51]母带后期处理录音室Mastering Studio：TC Faders\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"7",
+		"url":"./music/当面说.mp3",
+		"name":"当面说",
+		"author":"陈势安",
+		"album":"坏掉的我们",
+		"songbg":"./images/song-imgs/songs/当面说.webp",
+		"background":"./images/song-imgs/songs/当面说.jpg",
+		"lyric":"[00:00.00] 作曲 : 都智文\n[00:01.00] 作词 : 葛大为\n[00:03.68]编曲：都智文\n[00:05.55]\n[00:24.86]手指按住手机 倾诉\n[00:28.86]语音多清楚 哪比得上拥抱的温度\n[00:35.61]你就在我左边一小步\n[00:39.74]世界都看见 你就是我领土\n[00:45.50]\n[00:46.18]说你想念 别等回家\n[00:48.60]热情才敢释放\n[00:51.43]说我爱你 别等一下\n[00:53.96]现在我 就要\n[00:56.42]\n[00:56.84]成熟的人最温柔\n[00:59.54]知道你要什么\n[01:02.43]我要爱 气氛我来掌握\n[01:06.63]\n[01:07.07]累赘的言语 不需要再说\n[01:10.37]直来直往 让我当面说\n[01:16.88]压抑不住地 想你\n[01:21.79]要你 爱你\n[01:26.51]\n[01:30.30]怀疑某种电影 有毒\n[01:34.27]结局多幸福 让人羡慕 我要更胜出\n[01:41.12]想知道你心里的分数\n[01:45.24]我只拿一百 不管得多辛苦\n[01:51.50]说你想念 别等回家\n[01:53.89]热情才敢释放\n[01:56.84]说我爱你 别等一下\n[01:59.39]现在我 就要\n[02:01.51]\n[02:02.20]成熟的人最温柔\n[02:04.89]知道你要什么\n[02:07.71]我要爱 气氛我来掌握\n[02:12.42]\n[02:12.71]累赘的言语 不需要再说\n[02:15.77]直来直往 让我当面说\n[02:22.36]压抑不住地 想你\n[02:26.16]像一个男人 我没在害怕的\n[02:31.68]这是我的作风 只要你欣赏\n[02:35.52]成熟的人最温柔\n[02:39.08]知道你要什么\n[02:41.79]我要爱 气氛我来掌握\n[02:46.48]\n[02:46.72]累赘的言语 不需要再说\n[02:49.83]直来直往 让我当面说\n[02:56.49]压抑不住地 想你\n[03:08.16]压抑不住地 想你\n[03:12.28]要你 爱你\n[03:17.78]\n[03:18.26]制作人：都智文\n[03:18.64]和声编写：都智文\n[03:18.89]和声：陈势安、都智文\n[03:19.20]Drum：江尚谦\n[03:19.44]吉他：倪方来\n[03:19.83]Bass：陈纪烽\n[03:20.08]录音师：叶育轩 YuHsuan Yeh\n[03:20.39]录音室：白金录音室 Platinum Studio，强力录音室\n[03:20.68]混音师：小K\n[03:21.01]混音室：强力录音室\n[03:21.60]\n[03:21.99]OP: 好感度音乐有限公司Good Sense Music Service Co., Ltd.\n[03:22.44]SP: Universal Ms Publ Ltd Taiwan\n[03:22.93]OP: 众匠（北京）文化传媒有限公司\n[03:23.45]SP: Universal Ms Publ Ltd Taiwan\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"8",
+		"url":"./music/Jackie Chan.mp3",
+		"name":"Jackie Chan",
+		"author":"Tiësto / Dzeko / Preme / Post Malone",
+		"album":"Jackie Chan",
+		"songbg":"./images/song-imgs/songs/Jackie Chan.webp",
+		"background":"./images/song-imgs/songs/Jackie Chan.jpg",
+		"lyric":"[by:小陀螺Tony]\n[00:01.19]Drop top, how we rollin' down on Collins South Beach (yeah)\n[00:04.96]Look like Kelly Rowland, this might be my destiny (yeah)\n[00:08.67]She want me to eat it, I guess dinner's on me (I got you, babe)\n[00:11.73]Know I got the sauce like a fuckin' recipe (ohh)\n[00:15.50]She say she's too young, don't want no man\n[00:19.41]So she gon' call her friends, now that's a plan\n[00:23.07]I just ordered sushi from Japan\n[00:26.83]Now your bitch wanna  kick it, Jackie Chan\n[00:31.05]She say she's too young, don't want no man\n[00:34.29]So she gon' call her friends, now that's a plan\n[00:37.80]I just ordered sushi from Japan\n[00:42.15]Now your bitch wanna kick it, Jackie Chan\n[00:48.08]Chan, Chan...\n[00:57.56]Now your bitch wanna kick it, Jackie Chan\n[01:14.70]Kick it, Jackie Chan\n[01:19.73]Chan, Jackie Chan, Chan\n[01:28.64]Now your bitch wanna kick it, Jackie Chan\n[01:30.53]\n[01:31.64]I think you got the wrong impression 'bout me, baby ('bout me, baby)\n[01:34.79]Just 'cause they heard what hood I’m from they think I'm crazy (they think I'm crazy)\n[01:39.31]Okay, well maybe just a little crazy (just a little)\n[01:39.86]'Cause I admit I'm crazy 'bout that lady, yeah (oh)\n[01:46.76]She say she's too young, don't want no man\n[01:50.67]So she gon' call her friends, now that's a plan\n[01:54.49]I just ordered sushi from Japan\n[01:58.26]Now your bitch wanna kick it, Jackie Chan\n[02:02.22]She say she's too young, don't want no man\n[02:06.03]So she gon' call her friends, now that's a plan\n[02:09.74]I just ordered sushi from Japan\n[02:13.77]Now your bitch wanna kick it, Jackie Chan\n[02:44.57]Now your bitch wanna kick it, Jackie Chan\n[03:01.30]Kick it, Jackie Chan\n[03:06.07]Chan, Jackie Chan, Chan\n[03:14.72]Now your bitch wanna kick it, Jackie Chan\n[03:21.39]Chan, Jackie Chan, Chan\n[03:30.41]Now your bitch wanna kick it, Jackie Chan\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"9",
+		"url":"./music/吹海风.mp3",
+		"name":"吹海风",
+		"author":"冯提莫",
+		"album":"吹海风",
+		"songbg":"./images/song-imgs/songs/吹海风.webp",
+		"background":"./images/song-imgs/songs/吹海风.jpg",
+		"lyric":"[00:00.00] 作曲 : Leo1Bee\n[00:01.00] 作词 : Leo1Bee\n[00:03.52]编曲：于昊\n[00:13.27]乘着公车\n[00:15.00]南北西东\n[00:16.79]阳光在风中不停闪动\n[00:20.60]手机铃声\n[00:22.29]放蝉鸣瓢虫\n[00:23.86]光着脚丫走在沙滩上体会午后\n[00:28.04]时间慢得像蜗牛\n[00:31.74]闹钟对我没作用\n[00:35.47]去感受\n[00:37.67]放开双臂的拥有\n[00:41.48]向左向右\n[00:42.67]想要吹海风看海鸥\n[00:46.83]和你一起遨游\n[00:51.42]到了寒冬也有夏天的暖融融\n[00:57.48]海风吹到我心中\n[01:01.30]像做了一场梦\n[01:06.53]夜里坐在沙滩看星空\n[01:13.12]这里没有\n[01:15.13]那里没有\n[01:16.87]怎样才能看到你的笑容\n[01:20.59]春夏秋冬\n[01:22.44]时间在走\n[01:23.88]安静地与你体会每一分感动\n[01:57.08]想要陪你去吹海风看海鸥\n[02:01.77]和你一起遨游\n[02:06.46]到了寒冬也有夏天的暖融融\n[02:12.56]海风吹到我心中\n[02:16.35]像做了一场梦\n[02:21.45]夜里坐在沙滩看星空\n[02:28.21]吹海风 看海鸥\n[02:31.81]和海豚一起游泳\n[02:36.53]浪花开放都打湿了太阳公公\n[02:42.72]海风吹到我们的心中\n[02:46.25]做一场仲夏夜的梦\n[02:53.53]夜里坐在沙滩看星空\n[03:23.47]夜里坐在沙滩看星空\n[03:30.00]在海风中吻住你的笑\n[03:36.43]\n"
 	},
 	{
-		"id":"3",
-		"url":"./music/3.mp3",
-		"name":"非酋",
-		"author":"啊啊啊",
-		"album":"非酋啊"
+		"id":"10",
+		"url":"./music/自拍.mp3",
+		"name":"自拍",
+		"author":"李荣浩",
+		"album":"李荣浩",
+		"songbg":"./images/song-imgs/songs/自拍.webp",
+		"background":"./images/song-imgs/songs/自拍.jpg",
+		"lyric":"[00:00.00] 作曲 : 李荣浩\n[00:00.278] 作词 : 李荣浩\n[00:00.834]\n[00:32.883]有几片云的晴空\n[00:36.245]除了感动还有微风\n[00:40.606]我的爱人走了很久\n[00:48.421]天气不热听着歌\n[00:51.837]几个背包一台旧车\n[00:56.020]我的世界音量不多\n[01:04.487]自拍的拍拍到世外\n[01:12.261]自拍的拍拍到发呆\n[01:18.688]前面阳光正面照过来\n[01:22.658]眼睛也不愿意睁开\n[01:26.576]一生无非几个欢笑悲哀\n[01:30.704]和爱你的女孩\n[01:34.318]看了几遍人生的指南\n[01:38.340]我还是选择没姿态\n[01:42.580]目前最有趣的等待是未来\n[02:02.180]有几片云的晴空\n[02:05.143]除了感动还有微风\n[02:09.256]我的爱人走了很久\n[02:17.472]天气不热听着歌\n[02:20.847]几个背包一台旧车\n[02:24.772]我的世界音量不多\n[02:33.904]自拍的拍拍到世外\n[02:41.713]自拍的拍拍到发呆\n[02:47.433]前面阳光正面照过来\n[02:51.703]眼睛也不愿意睁开\n[02:55.670]一生无非几个欢笑悲哀\n[02:59.788]和爱你的女孩\n[03:03.496]看了几遍人生的指南\n[03:07.240]我还是选择没姿态\n[03:11.870]目前最有趣的等待是未来\n[03:45.649]前面阳光正面照过来\n[03:49.684]眼睛也不愿意睁开\n[03:53.714]一生无非几个欢笑悲哀\n[03:57.839]和爱你的女孩\n[04:01.496]看了几遍人生的指南\n[04:05.172]我还是选择没姿态\n[04:09.136]目前最有趣的等待\n[04:12.565]前面阳光正面照过来\n[04:16.721]眼睛也不愿意睁开\n[04:20.781]一生无非几个欢笑悲哀\n[04:24.946]和爱你的女孩\n[04:28.661]看了几遍人生的指南\n[04:32.196]我还是选择没姿态\n[04:36.310]目前最有趣的等待\n[04:39.787]前面阳光正面照过来\n[04:43.997]眼睛也不愿意睁开\n[04:47.811]一生无非几个欢笑悲哀\n"
 	}
 ]

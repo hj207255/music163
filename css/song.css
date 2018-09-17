@@ -53,8 +53,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url(../images/song-imgs/109951163434346270.jpg) no-repeat center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	z-index: -1;
 }
 .record{
 	width: 80vw;
@@ -105,14 +106,16 @@
 	color: hsla(0,0%,100%,.6);
 	font-weight: 400;
 }
-.lyric h1>span{
+.lyric h1>span#name{
 	color: #fff;
 }
 .lyric .lyric-inner{
-	font-size: 16px;
+	font-size: 4.27vw;
 	line-height: 1.5;
-	height: 23.5vw;
+	height: 21.5vw;
 	overflow: hidden;
+	width: 100%;
+	padding: 0 9.33vw;
 }
 .lyric .lyric-inner p {
 	padding-bottom: 2vw;
