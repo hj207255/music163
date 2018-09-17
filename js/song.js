@@ -1,4 +1,29 @@
 $(function(){
+
+	let id=location.search.match(/\bid=([^&]*)/)[1]
+	$.get('./songs.json').then(function(response){
+		let $songs=response
+		let $song=$songs.filter((i)=>{return i.id===id})
+		console.log($song[0].url)
+		let audio=document.createElement('audio')
+		audio.src=$song[0].url
+		audio.oncanplay=function(){
+			audio.play()
+		}
+		$('.mask').on('click',function(){
+			if(!audio.paused){
+				audio.pause()
+				$('.record').addClass('playing')
+				$('.mask>img').addClass('playing')
+			}else{
+				audio.play()
+				$('.record').removeClass('playing')
+				$('.mask>img').removeClass('playing')
+			}
+		})
+	})
+
+
 	$.get('./lyric.json').then(function(object){
 		let {lyric}=object
 		let array=lyric.split('\n')
@@ -17,24 +42,7 @@ $(function(){
 			$p.appendTo($lyric)
 		})
 	})
-	let audio=document.createElement('audio')
-	audio.src='//m10.music.126.net/20180917085531/789e9e517a3896e809fea62cc937cfdc/ymusic/8f33/9c3d/e2c0/4281cd2899165a4637baa6107c7e6def.mp3'
-	audio.oncanplay=function(){
-		audio.play()
-	}
-	
 
-	$('.mask').on('click',function(){
-		if(!audio.paused){
-			audio.pause()
-			$('.record').addClass('playing')
-			$('.mask>img').addClass('playing')
-		}else{
-			audio.play()
-			$('.record').removeClass('playing')
-			$('.mask>img').removeClass('playing')
-		}
-	})
 
 
 	// let $lyric1=$('.lyric-inner-cover');

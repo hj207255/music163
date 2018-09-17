@@ -65,6 +65,7 @@ header .download{
 .navbar .navbar-container li .navbar-text-container{
 	display: inline-block;
 	height: 100%;
+	position: relative;
 }
 .navbar .navbar-container li .navbar-text{
 	display: inline-block;
@@ -73,8 +74,15 @@ header .download{
 	line-height: 10.7vw;
 	padding: 0 1.33vw;
 }
-.navbar .navbar-container li.active .navbar-text-container{
-	border-bottom: 2px solid #d33a31;
+.navbar .navbar-container li.active .navbar-text-container::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0.53vw;
+	background: #d33a31;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 .navbar .navbar-container li.active .navbar-text{
 	color: #d33a31
@@ -119,13 +127,21 @@ main .recommend li span{
 	-webkit-box-orient: vertical;
 	padding: 1.6vw 0.533vw 0 1.6vw;
 }
+main .newest>p {
+	text-align: center;
+}
+main .newest a{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+}
 main .newest .newest-row{
 	padding: 1.6vw 0;
 	margin-left: 2.667vw;
 	border-bottom: 1px solid #F0F0F0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 main .newest .newest-row .newest-row2{
 	display: flex;
