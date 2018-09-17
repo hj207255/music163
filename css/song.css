@@ -112,14 +112,21 @@
 .lyric .lyric-inner{
 	font-size: 4.27vw;
 	line-height: 1.5;
-	height: 21.5vw;
+	height: 25.215vw;
 	overflow: hidden;
 	width: 100%;
 	padding: 0 9.33vw;
 }
+.lyric .lyric-inner .lyric-inner-cover{
+	transition: transform .3s linear;
+}
 .lyric .lyric-inner p {
 	padding-bottom: 2vw;
 	color: hsla(0,0%,100%,.6);
+	transition: transform .3s linear;
+}
+.lyric .lyric-inner p.active{
+	color: #fff;
 }
 .mask{
 	position: absolute;

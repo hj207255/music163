@@ -49,20 +49,29 @@ $(function(){
 		})
 
 
-		// setInterval(function(){
-		// 	let second=audio.currentTime
-		// 	let munite=~~(second/60)
-		// 	let csecond=second-(munite*60)
-		// 	munite=munite<=10?'0'+munite:munite
-		// 	csecond=csecond<=10?'0'+csecond:csecond
-		// 	let time=`${munite}:${csecond}`
-		// 	let $ps=$('.lyric-inner-cover>p')
-		// 	for(let i=0;i<$ps.length;i++){
-		// 		if($ps.eq(i).attr('data-time')<time&&$ps.eq(i+1).attr('data-time')>time){
-		// 			$ps.eq(i)
-		// 		}
-		// 	}
-		// },1000)
+		setInterval(()=>{
+			let second=audio.currentTime
+			let munite=~~(second/60)
+			let csecond=second-(munite*60)
+			munite=munite<=10?'0'+munite:munite
+			csecond=csecond<=10?'0'+csecond:csecond
+			let time=`${munite}:${csecond}`
+			let $ps=$('.lyric-inner-cover>p')
+			let $currentp
+			for(let i=0;i<$ps.length;i++){
+				if($ps.eq(i).attr('data-time')<time&&$ps.eq(i+1).attr('data-time')>time&&$ps.eq(i+1)!==0){
+					$currentp=$ps.eq(i)
+					break
+				}
+			}
+			if($currentp){
+				$currentp.addClass('active').prev().removeClass('active')
+				let $currentTop=$currentp.offset().top
+				let $top=$('.lyric-inner-cover').offset().top
+				let $s=$currentTop-$top-$('.lyric-inner').height()/3
+				$('.lyric-inner-cover').css('transform',`translateY(-${$s}px)`)
+			}
+		},500)
 	})
 
 
