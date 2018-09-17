@@ -18,7 +18,7 @@ $(function(){
 		})
 	})
 	let audio=document.createElement('audio')
-	audio.src='//m10.music.126.net/20180915085453/d09bab0d8ed5e7983a0cb4dc5cba1e50/ymusic/8f33/9c3d/e2c0/4281cd2899165a4637baa6107c7e6def.mp3'
+	audio.src='//m10.music.126.net/20180917085531/789e9e517a3896e809fea62cc937cfdc/ymusic/8f33/9c3d/e2c0/4281cd2899165a4637baa6107c7e6def.mp3'
 	audio.oncanplay=function(){
 		audio.play()
 	}
