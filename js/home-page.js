@@ -11,8 +11,6 @@ $(function(){
 		})
 	}
 
-
-
 	$.get('./songs.json').then(function(response){
 		let $songs=response
 		$songs.forEach((i)=>{
@@ -54,5 +52,61 @@ $(function(){
 			$rank.appendTo('.hotcontent')
 		})
 	})
+
+	$('.input').focus(()=>{
+		$('.input').val('')
+		$('.icon.right').css('display','block')
+	})
+	$('.input').blur(()=>{
+		$('.input').val('搜索歌曲、歌手、专辑')
+		$('.icon.right').css('display','none')
+	})
+
+	// 引入leancloud
+	var APP_ID = 'wS0ILJoH4VTvPdX99Qy59Na2-gzGzoHsz';
+	var APP_KEY = 'RINAYT0lB2AzFXRhSLwFqY8i';
+
+	AV.init({
+	  appId: APP_ID,
+	  appKey: APP_KEY
+	});
+
+	let timeId=null
+	$('.input').on('input',function(e){
+		if(timeId){
+			window.clearTimeout(timeId)
+		}
+		timeId=setTimeout(function(){
+			timeId=null
+			let $input=$(e.currentTarget)
+			let value=$('.input').val().trim()
+			if(value===''){return}
+			var query1 = new AV.Query('songs');
+	  		query1.contains('name', value);
+	  		var query2 = new AV.Query('songs');
+  			query2.equalTo('author', value);
+  			var query = AV.Query.or(query1, query2);
+	  		query.find().then(function(results){
+	  			$('.search-content').empty()
+	  			if(results.length===0){
+	  				$('.search-content').html('没有结果')
+	  			}else{
+	  				for(let i=0;i<results.length;i++){
+	  					let songs=results[i].attributes
+	  					console.log(songs)
+	  					let $li=$(`
+	  						<li data-id='${songs.objectId}'>
+	  							<a href="./song.html?id=${songs.id}">
+	  								${songs.name}-${songs.author}
+	  							</a>
+	  						</li>
+	  					`)
+	  					$li.appendTo('.search-content')
+	  				}
+	  			}
+	  		})
+		},500)
+	})
+
 
 })

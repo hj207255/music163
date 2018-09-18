@@ -11,6 +11,13 @@
 	display: block;
 	clear: both;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	background-color: #fcfcfd;
+}
 @keyframes rotating{
 	0% {
 		transform: rotate(0deg);

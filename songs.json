@@ -1,7 +1,7 @@
 [
 	{
 		"id":"1",
-		"url":"./music/温顺的猫.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E6%B8%A9%E9%A1%BA%E7%9A%84%E7%8C%AB.mp3",
 		"name":"温顺的猫",
 		"author":"伍嘉成",
 		"album":"温顺的猫",
@@ -11,7 +11,7 @@
 	},
 	{
 		"id":"2",
-		"url":"./music/醒来.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E9%86%92%E6%9D%A5.mp3",
 		"name":"醒来",
 		"author":"臧鸿飞",
 		"album":"醒来",
@@ -21,7 +21,7 @@
 	},
 	{
 		"id":"3",
-		"url":"./music/Tranz.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/Tranz.mp3",
 		"name":"Tranz",
 		"author":"Gorillaz",
 		"album":"Tranz",
@@ -31,7 +31,7 @@
 	},
 	{
 		"id":"4",
-		"url":"./music/奇妙能力歌.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E5%A5%87%E5%A6%99%E8%83%BD%E5%8A%9B%E6%AD%8C.mp3",
 		"name":"奇妙能力歌",
 		"author":"陈粒",
 		"album":"奇妙能力歌",
@@ -41,7 +41,7 @@
 	},
 	{
 		"id":"5",
-		"url":"./music/错过不错.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E9%94%99%E8%BF%87%E4%B8%8D%E9%94%99.mp3",
 		"name":"错过不错",
 		"author":"邓紫棋",
 		"album":"另一个童话",
@@ -51,7 +51,7 @@
 	},
 	{
 		"id":"6",
-		"url":"./music/贫穷或富有.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E8%B4%AB%E7%A9%B7%E6%88%96%E5%AF%8C%E6%9C%89.mp3",
 		"name":"贫穷或富有",
 		"author":"李荣浩",
 		"album":"贫穷或富有",
@@ -61,7 +61,7 @@
 	},
 	{
 		"id":"7",
-		"url":"./music/当面说.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E5%BD%93%E9%9D%A2%E8%AF%B4.mp3",
 		"name":"当面说",
 		"author":"陈势安",
 		"album":"坏掉的我们",
@@ -71,7 +71,7 @@
 	},
 	{
 		"id":"8",
-		"url":"./music/理想三旬.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E7%90%86%E6%83%B3%E4%B8%89%E6%97%AC.mp3",
 		"name":"理想三旬",
 		"author":"陈鸿宇",
 		"album":"浓烟下的诗歌电台",
@@ -81,7 +81,7 @@
 	},
 	{
 		"id":"9",
-		"url":"./music/吹海风.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E5%90%B9%E6%B5%B7%E9%A3%8E.mp3",
 		"name":"吹海风",
 		"author":"冯提莫",
 		"album":"吹海风",
@@ -91,7 +91,7 @@
 	},
 	{
 		"id":"10",
-		"url":"./music/自拍.mp3",
+		"url":"//pf8us9ab6.bkt.clouddn.com/%E8%87%AA%E6%8B%8D.mp3",
 		"name":"自拍",
 		"author":"李荣浩",
 		"album":"李荣浩",

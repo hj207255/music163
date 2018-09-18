@@ -12,8 +12,21 @@
 	display: block;
 	clear: both;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
 li{
 	list-style: none;
+}
+body{
+	background-color: #fcfcfd;
+}
+.icon{
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
 }
 /*顶部部分*/
 header{
@@ -237,7 +250,7 @@ main .hotcontent a{
 main .hotcontent .hot-row{
 	padding: 1.6vw 0;
 	margin-left: 2.667vw;
-	border-bottom: 1px solid #F0F0F0;
+	border-bottom: 0.27vw solid #F0F0F0;
 }
 main .hotcontent .hot-row .hot-left{
 	display: flex;
@@ -286,3 +299,51 @@ main .hotdown{
 	text-align: center;
 	color: #999;
 }
+/*搜索页面*/
+main .home-search{
+	padding: 4vw 2.67vw;
+}
+main .search{
+	height: 8vw;
+	background: #ebecec;
+	border-radius: 8vw;
+	position: relative;
+}
+main .search .input{
+	width: 100%;
+	height: 8vw;
+	line-height: 4.8vw;
+	font-size: 3.73vw;
+	color: #c9c9c9;
+	border: 0;
+	outline: none;
+	background: transparent;
+	padding: 0 8vw;
+}
+main .search .icon.left{
+	position: absolute;
+	top: 50%;
+	left: 2.13vw;
+	transform: translateY(-50%);
+	fill: #BDBDBD;
+}
+main .search .icon.right{
+	position: absolute;
+	top: 50%;
+	right: 2.13vw;
+	transform: translateY(-50%);
+	fill: #BDBDBD;
+	display: none;
+}
+/*main .search .search-m{
+	position: absolute;
+    left: 8vw;
+    top: 1.33vw;
+    font-size: 3.73vw;
+    color: #c9c9c9;
+    background: transparent;
+    pointer-events: none;
+}*/
+
+
+	
