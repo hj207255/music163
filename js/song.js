@@ -2,6 +2,9 @@ $(function(){
 
 	let id=location.search.match(/\bid=([^&]*)/)[1]
 	$.get('./songs.json').then(function(response){
+
+		$('#newestLoading').remove()
+		
 		let $songs=response
 		let $song=$songs.filter((i)=>{return i.id===id})
 		let audio=document.createElement('audio')
@@ -18,6 +21,8 @@ $(function(){
 		$img.appendTo('.record')
 
 		$('.music-song').css('background-image','url('+$song[0].background+')')
+
+
 
 		let lyric=$song[0].lyric
 		let array=lyric.split('\n')

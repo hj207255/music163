@@ -1,3 +1,4 @@
+/*初始化*/
 *{
 	padding: 0;
 	margin: 0;
@@ -14,7 +15,7 @@
 li{
 	list-style: none;
 }
-
+/*顶部部分*/
 header{
 	width: 100%;
 	background-color: #D43C33;
@@ -42,6 +43,7 @@ header .download{
 	color: #fff;
 	padding-bottom: 1vw;
 }
+/*导航栏部分*/
 .navbar{
 	height: 10.7vw;
 	width: 100%;
@@ -61,6 +63,7 @@ header .download{
 	width: 100%;
 	text-align: center;
 	height: 100%;
+	transition: all .3s linear;
 }
 .navbar .navbar-container li .navbar-text-container{
 	display: inline-block;
@@ -87,8 +90,16 @@ header .download{
 .navbar .navbar-container li.active .navbar-text{
 	color: #d33a31
 }
+/*tab切换*/
+.tab-content>li.tabActive{
+	display: block;
+}
+.tab-content>li{
+	display: none;
+}
+/*推荐音乐部分*/
 main{
-	padding-top: 32.3vw;
+	padding-top: 27.3vw;
 }
 main .main-title{
 	font-size: 4.53vw;
@@ -97,6 +108,7 @@ main .main-title{
 	line-height: 5.33vw;
 	padding-left: 2.4vw;
 	border-left: 0.53vw solid #d33a31;
+	margin-top: 5vw;
 }
 main .recommend{
 	margin-bottom: 6.4vw;
@@ -197,4 +209,80 @@ footer .copyright{
 	transform: scale(.75);
 	text-align: center;
 	padding-bottom: 5.33vw;
+}
+/*热歌榜部分*/
+main .hotmusic{
+	height: 38.9vw;
+	background: url(../images/home-page-imgs/hot_music_bg_2x.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	padding-left: 5.33vw;
+}
+main .hotmusic .hotmusic-inner{
+	width: 37.87vw;
+	height: 17.87vw;
+	background: url(../images/home-page-imgs/index_icon_2x.png);
+	background-position: -6.4vw -8vw;
+	background-size: 44.27vw 25.87vw;
+}
+main .hotcontent a{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+}
+main .hotcontent .hot-row{
+	padding: 1.6vw 0;
+	margin-left: 2.667vw;
+	border-bottom: 1px solid #F0F0F0;
+}
+main .hotcontent .hot-row .hot-left{
+	display: flex;
+	align-items: center;
+}
+main .hotcontent .hot-row .hot-ranking{
+	display: block;
+	color: #999;
+	font-size: 4.53vw;
+	width: 7.47vw;
+}
+main .hotcontent .hot-row:nth-child(-n+3) .hot-ranking{
+	color: #df3436;
+}
+main .hotcontent .hot-row .hot-row2{
+	display: flex;
+	align-items: center;
+}
+main .hotcontent .hot-row .hot-row1{
+	font-size: 4.53vw;
+	line-height: 1.5;
+}
+main .hotcontent .hot-row .hot-row2{
+	font-size: 3.2vw;
+	color: #888;
+}
+main .hotcontent .hot-row .hot-row-1 .sq{
+	display: inline-block;
+	width: 3.2vw;
+	height: 2.13vw;
+	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
+	background-size: 44.267vw 25.867vw;
+	margin-right: 1.07vw;
+}
+main .hotcontent .hot-row .hot-row-2{
+	width: 5.9vw;
+	height: 5.9vw;
+	margin-right: 2.67vw;
+	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
+	background-size: 44.267vw 25.867vw;
+	background-position: -6.4vw 0vw;
+}
+main .hotdown{
+	height: 14.67vw;
+	line-height: 14.67vw;
+	text-align: center;
+	color: #999;
 }

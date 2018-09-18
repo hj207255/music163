@@ -47,6 +47,19 @@
 	}
 }
 
+
+#newestLoading{
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	z-index: 5;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;left: 0;
+}
 .music-song{
 	height: 100vh;
 	width: 100vw;
