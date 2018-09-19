@@ -1,0 +1,50 @@
+/*初始化*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+*::after, *::before{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.download{
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/download-imgs/bgi.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.download .download-row{
+	margin-top: -15vw;
+}
+.download .download-row .download-logo{
+	width: 28.8vw;
+	height: 28.8vw;
+	margin: 0 auto;
+	background: url(../images/download-imgs/mlogo.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.download .download-row .download-text{
+	display: block;
+	font-size: 6.4vw;
+	width: 50.13vw;
+	height: 12.27vw;
+	line-height: 12.27vw;
+	color: #fff;
+	text-align: center;
+	border: 0.27vw solid #ccc;
+	border-radius: 1vw;
+	margin-top: 10vw;
+}

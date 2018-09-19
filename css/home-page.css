@@ -45,6 +45,9 @@ header .topsvg{
 	height: 6.7vw;
 	margin: 5.2vw 0;
 }
+header .download-a{
+	display: block;
+}
 header .download{
 	display: inline-block;
 	font-size: 4vw;
@@ -207,6 +210,9 @@ footer .logo .logosvg{
 	width: 61.33vw;
 	height: 11.73vw;
 }
+footer .openapp-a{
+	display: block;
+}
 footer .openapp{
 	font-size: 4.26vw;
 	line-height: 10.13vw;
@@ -292,6 +298,9 @@ main .hotcontent .hot-row .hot-row-2{
 	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
 	background-size: 44.267vw 25.867vw;
 	background-position: -6.4vw 0vw;
+}
+main .hotdown-a{
+	display: block;
 }
 main .hotdown{
 	height: 14.67vw;

@@ -1,0 +1,56 @@
+/*初始化*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+*::after, *::before{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li{
+	list-style: none;
+}
+
+.r-list{
+	width: 100vw;
+	height: 100vh;
+}
+.r-list .r-top{
+	padding: 8vw 2.67vw 8vw 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.r-list .r-top .r-top-left{
+	height: 33.6vw;
+	width: 33.6vw;
+}
+.r-list .r-top .r-top-left img{
+	width: 100%;
+	vertical-align: middle;
+}
+.r-list .r-top .r-top-right{
+	font-size: 4.53vw;
+	padding-left: 3vw;
+	width: 1%;
+	flex: 1 1 auto;
+}
+
+
+.r-list .r-lists .r-text{
+	height: 6.13vw;
+	line-height: 6.13vw;
+	font-size: 3.2vw;
+	color: #666;
+    background-color: #eeeff0;
+    padding-left: 2.67vw;
+}
