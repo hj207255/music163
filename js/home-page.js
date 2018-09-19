@@ -1,4 +1,15 @@
 $(function(){
+
+	// 引入leancloud
+	var APP_ID = 'wS0ILJoH4VTvPdX99Qy59Na2-gzGzoHsz';
+	var APP_KEY = 'RINAYT0lB2AzFXRhSLwFqY8i';
+
+	AV.init({
+	  appId: APP_ID,
+	  appKey: APP_KEY
+	});
+/*********************************导航栏***********************************/
+	// 导航栏切换
 	let $lis=$('.navbar-container>li')
 	for(let i=0;i<$lis.length;i++){
 		$lis.eq(i).on('click',function(e){
@@ -11,37 +22,67 @@ $(function(){
 		})
 	}
 
-	$.get('./songs.json').then(function(response){
-		let $songs=response
-		$songs.forEach((i)=>{
-			let $li=$(`
+/***********************首页从leancloud获取内容*******************************/
+	// 使用leancloud获取歌曲列表
+  	var query = new AV.Query('songs');
+  	query.find().then(function (response) {
+  		// 随机生成10个不重复数字
+	  	let arr=[]
+	  	for(let j=0;j<10;j++){
+  			for(let i=arr.length;i<10;i++){
+				let count=parseInt(Math.random()*15)
+		  		if(arr.indexOf(count)===-1){
+		  			arr.push(count)
+		  		}
+	  		}
+	  	}
+	  	let arrhot=[]
+	  	for(let j=0;j<10;j++){
+  			for(let i=arrhot.length;i<10;i++){
+				let count=parseInt(Math.random()*15)
+		  		if(arrhot.indexOf(count)===-1){
+		  			arrhot.push(count)
+		  		}
+	  		}
+	  	}
+	  	
+  		// 首页歌曲列表
+  		let newSongs=[]
+  		for(let i=0;i<response.length;i++){
+  			let $songs=response[i].attributes
+  			newSongs.push($songs)
+  		}
+  		for(let i=0;i<arr.length;i++){
+  			let song=newSongs[arr[i]]
+  			let $li=$(`
 				<div class="newest-row">
-				<a href="./song.html?id=${i.id}">
+				<a href="./song.html?id=${song.id}">
 					<div class="newest-row-1">
-						<p class="newest-row1">${i.name}</p>
+						<p class="newest-row1">${song.name}</p>
 						<p class="newest-row2">
-							<i class="sq"></i>${i.author}-${i.album}
+							<i class="sq"></i>${song.author}-${song.album}
 						</p>
 					</div>
 					<div class="newest-row-2"></div>
-				</a>	
+				</a>
 				</div>
 			`)
 			$li.appendTo('.newest')
-		})
-		$('#newestLoading').remove()
+			$('#newestLoading').remove()
+  		}
 		// 热歌榜
-		$songs.forEach((i)=>{
-			let ranks=i.id<10?'0'+i.id:i.id
+		for(let i=0;i<arrhot.length;i++){
+			let song=newSongs[arrhot[i]]
+			let ranks=i<9?'0'+(i+1):(i+1)
 			let $rank=$(`
 				<div class="hot-row">
-					<a href="./song.html?id=${i.id}">
+					<a href="./song.html?id=${song.id}">
 						<span class="hot-left">
 							<span class="hot-ranking">${ranks}</span>
 							<div class="hot-row-1">
-								<p class="hot-row1">${i.name}</p>
+								<p class="hot-row1">${song.name}</p>
 								<p class="hot-row2">
-									<i class="sq"></i>${i.author}-${i.album}
+									<i class="sq"></i>${song.author}-${song.album}
 								</p>
 							</div>
 						</span>
@@ -50,9 +91,11 @@ $(function(){
 				</div>
 			`)
 			$rank.appendTo('.hotcontent')
-		})
-	})
-
+		}
+  	})
+	
+/*********************************搜索页面***********************************/	
+	// 搜索框获取焦点/失去焦点事件
 	$('.input').focus(()=>{
 		$('.input').val('')
 		$('.icon.right').css('display','block')
@@ -61,18 +104,14 @@ $(function(){
 		$('.input').val('搜索歌曲、歌手、专辑')
 		$('.icon.right').css('display','none')
 	})
+	let value=$('.input').val().trim()
+	if(value==='搜索歌曲、歌手、专辑'){$('.search-content').empty()}
 
-	// 引入leancloud
-	var APP_ID = 'wS0ILJoH4VTvPdX99Qy59Na2-gzGzoHsz';
-	var APP_KEY = 'RINAYT0lB2AzFXRhSLwFqY8i';
-
-	AV.init({
-	  appId: APP_ID,
-	  appKey: APP_KEY
-	});
-
+	// 从leancloud中获取搜索结果****************使用到函数节流
 	let timeId=null
 	$('.input').on('input',function(e){
+		let value=$('.input').val().trim()
+		if(value===''){$('.search-content').empty()}
 		if(timeId){
 			window.clearTimeout(timeId)
 		}
@@ -89,16 +128,23 @@ $(function(){
 	  		query.find().then(function(results){
 	  			$('.search-content').empty()
 	  			if(results.length===0){
-	  				$('.search-content').html('没有结果')
+	  				let $wu=$(`
+	  						<li class="search-content-row">
+		  						<span class="wu">没有结果<span>
+	  						</li>
+	  					`)
+	  				$wu.appendTo('.search-content')
 	  			}else{
 	  				for(let i=0;i<results.length;i++){
 	  					let songs=results[i].attributes
-	  					console.log(songs)
 	  					let $li=$(`
-	  						<li data-id='${songs.objectId}'>
-	  							<a href="./song.html?id=${songs.id}">
-	  								${songs.name}-${songs.author}
-	  							</a>
+	  						<li class="search-content-row">
+		  						<a href="./song.html?id=${songs.id}">
+		  							<svg class="icon scr" aria-hidden="true">
+	    								<use xlink:href="#icon-search"></use>
+									</svg>
+		  							<span class="search-text">${songs.name}-${songs.author}</span>
+		  						</a>
 	  						</li>
 	  					`)
 	  					$li.appendTo('.search-content')
@@ -108,5 +154,55 @@ $(function(){
 		},500)
 	})
 
-
 })
+
+
+
+
+
+
+
+
+
+// 传统方式从本地.json文件获取
+	// $.get('./songs.json').then(function(response){
+	// 	let $songs=response
+	// 	$songs.forEach((i)=>{
+	// 		let $li=$(`
+	// 			<div class="newest-row">
+	// 			<a href="./song.html?id=${i.id}">
+	// 				<div class="newest-row-1">
+	// 					<p class="newest-row1">${i.name}</p>
+	// 					<p class="newest-row2">
+	// 						<i class="sq"></i>${i.author}-${i.album}
+	// 					</p>
+	// 				</div>
+	// 				<div class="newest-row-2"></div>
+	// 			</a>	
+	// 			</div>
+	// 		`)
+	// 		$li.appendTo('.newest')
+	// 	})
+	// 	$('#newestLoading').remove()
+	// 	// 热歌榜
+	// 	$songs.forEach((i)=>{
+	// 		let ranks=i.id<10?'0'+i.id:i.id
+	// 		let $rank=$(`
+	// 			<div class="hot-row">
+	// 				<a href="./song.html?id=${i.id}">
+	// 					<span class="hot-left">
+	// 						<span class="hot-ranking">${ranks}</span>
+	// 						<div class="hot-row-1">
+	// 							<p class="hot-row1">${i.name}</p>
+	// 							<p class="hot-row2">
+	// 								<i class="sq"></i>${i.author}-${i.album}
+	// 							</p>
+	// 						</div>
+	// 					</span>
+	// 					<div class="hot-row-2"></div>
+	// 				</a>
+	// 			</div>
+	// 		`)
+	// 		$rank.appendTo('.hotcontent')
+	// 	})
+	// })

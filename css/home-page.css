@@ -50,7 +50,7 @@ header .download{
 	font-size: 4vw;
 	height: 8vw;
 	line-height: 8vw;
-	border: 1px solid #E7948F;
+	border: 0.27vw solid #E7948F;
 	border-radius: 8vw;
 	padding: 0 2.7vw;
 	color: #fff;
@@ -60,10 +60,10 @@ header .download{
 .navbar{
 	height: 10.7vw;
 	width: 100%;
-	border-bottom: 1px solid #F4F4F4;
+	border-bottom: 0.27vw solid #F4F4F4;
 	background: #fff;
 	position: fixed;
-    top: 64px;
+    top: 17.07vw;
     left: 0;
 }
 .navbar .navbar-container{
@@ -166,7 +166,7 @@ main .newest a{
 main .newest .newest-row{
 	padding: 1.6vw 0;
 	margin-left: 2.667vw;
-	border-bottom: 1px solid #F0F0F0;
+	border-bottom: 0.27vw solid #F0F0F0;
 }
 main .newest .newest-row .newest-row2{
 	display: flex;
@@ -210,7 +210,7 @@ footer .logo .logosvg{
 footer .openapp{
 	font-size: 4.26vw;
 	line-height: 10.13vw;
-	border: 1px solid #d33a31;
+	border: 0.27vw solid #d33a31;
 	border-radius: 10.13vw;
 	text-align: center;
 	color: #d33a31;
@@ -302,6 +302,7 @@ main .hotdown{
 /*搜索页面*/
 main .home-search{
 	padding: 4vw 2.67vw;
+	border-bottom: 0.27vw solid #eee;
 }
 main .search{
 	height: 8vw;
@@ -320,14 +321,22 @@ main .search .input{
 	background: transparent;
 	padding: 0 8vw;
 }
-main .search .icon.left{
+main .home-search .search .icon.left{
 	position: absolute;
 	top: 50%;
 	left: 2.13vw;
 	transform: translateY(-50%);
 	fill: #BDBDBD;
 }
-main .search .icon.right{
+main .home-search .search .icon-row{
+	width: 8vw;
+	height: 8vw;
+	position: absolute;
+	top: 50%;
+	right: 2.13vw;
+	transform: translateY(-50%);
+}
+main .home-search .search .icon.right{
 	position: absolute;
 	top: 50%;
 	right: 2.13vw;
@@ -344,6 +353,34 @@ main .search .icon.right{
     background: transparent;
     pointer-events: none;
 }*/
-
+main .search-content{
+	height: 12vw;
+	margin-left: 2.67vw;
+}
+main .search-content .icon.scr{
+	height: 5vw;
+	width: 5vw;
+	fill: #BDBDBD;
+	margin-right: 1.87vw;
+}
+main .search-content .search-content-row{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-top: 0.27vw solid #eee;
+	border-bottom: 0.27vw solid #eee;
+}
+main .search-content .search-content-row .wu{
+	display: block;
+	height: 12vw;
+	line-height: 12vw;
+}
+main .search-content .search-content-row>a{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 100%;
+}
 
 	

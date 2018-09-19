@@ -31,26 +31,26 @@ body{
     background-position: 0 0;
 	}
 	15% {
-	    background-position: 0 -12px;
+	    background-position: 0 -3.2vw;
 	}
 	30% {
-	    background-position: 0 -24px;
+	    background-position: 0 -6.4vw;
 	}
 	45% {
-	    background-position: 0 -36px;
+	    background-position: 0 -9.6vw;
 	}
 
 	60% {
-	    background-position: 0 -48px;
+	    background-position: 0 -12.8vw;
 	}
 	75% {
-	    background-position: 0 -60px;
+	    background-position: 0 -16vw;
 	}
 	90% {
-	    background-position: 0 -72px;
+	    background-position: 0 -19.2vw;
 	}
 	100% {
-	    background-position: 0 -84px;
+	    background-position: 0 -22.4vw;
 	}
 }
 
@@ -121,7 +121,7 @@ body{
 	flex-grow: 6;
 }
 .lyric h1{
-	font-size: 18px;
+	font-size: 4.8vw;
 	margin-bottom: 4vw;
 	color: hsla(0,0%,100%,.6);
 	font-weight: 400;
@@ -191,12 +191,12 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 18px;
+	font-size: 4.8vw;
 	padding-bottom: 2.7vw;
 	color: #d33a31;
 }
 .footer-wrap .open,.footer-wrap .download{
-	border: 1px solid #d33a31;
+	border: 0.27vw solid #d33a31;
 	height: 10.7vw;
 	line-height: 10.7vw;
 	border-radius: 10.7vw;
