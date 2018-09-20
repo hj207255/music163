@@ -26,15 +26,12 @@ $(function(){
 	var query = new AV.Query('images');
   	query.find().then(function (imgresponse){
   		// 在0-5中随机生成6个不重复数字
-	  	let imgarr=[]
-	  	for(let j=0;j<7;j++){
-  			for(let i=imgarr.length;i<7;i++){
-				let count=parseInt(Math.random()*6)
-		  		if(imgarr.indexOf(count)===-1){
-		  			imgarr.push(count)
-		  		}
-	  		}
-	  	}
+  		function randomsort(a, b) {
+   			return Math.random()>.5 ? -1 : 1;
+		}
+		let imgarr = [0, 1, 2, 3, 4, 5];
+		imgarr.sort(randomsort)
+
 	  	let images=[]
   		for(let i=0;i<imgresponse.length;i++){
   			let $img=imgresponse[i].attributes
@@ -86,6 +83,7 @@ $(function(){
   			let $songs=response[i].attributes
   			newSongs.push($songs)
   		}
+
   		for(let i=0;i<arr.length;i++){
   			let song=newSongs[arr[i]]
   			let $li=$(`
@@ -94,7 +92,7 @@ $(function(){
 					<div class="newest-row-1">
 						<p class="newest-row1">${song.name}</p>
 						<p class="newest-row2">
-							<i class="sq"></i>${song.author}-${song.album}
+							<i class="sq ${song.sq}"></i>${song.author}-${song.album}
 						</p>
 					</div>
 					<div class="newest-row-2"></div>
@@ -104,6 +102,7 @@ $(function(){
 			$li.appendTo('.newest')
 			$('#newestLoading').remove()
   		}
+
 		// 热歌榜
 		for(let i=0;i<arrhot.length;i++){
 			let song=newSongs[arrhot[i]]
@@ -116,7 +115,7 @@ $(function(){
 							<div class="hot-row-1">
 								<p class="hot-row1">${song.name}</p>
 								<p class="hot-row2">
-									<i class="sq"></i>${song.author}-${song.album}
+									<i class="sq  ${song.sq}"></i>${song.author}-${song.album}
 								</p>
 							</div>
 						</span>
@@ -185,7 +184,7 @@ $(function(){
 	  				}
 	  			}
 	  		})
-		},500)
+		},300)
 	})
 
 })

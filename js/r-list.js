@@ -62,7 +62,7 @@ $(function(){
 							<div class="lists-row-1">
 								<p class="lists-row1">${song.name}</p>
 								<p class="lists-row2">
-									<i class="sq"></i>${song.author}-${song.album}
+									<i class="sq ${song.sq}"></i>${song.author}-${song.album}
 								</p>
 							</div>
 						</span>
@@ -71,7 +71,7 @@ $(function(){
 				</div>
 			`)
 			$li.appendTo('.lists')
-			// $('#newestLoading').remove()
+			$('#listLoading').remove()
   		}
 	})
 })

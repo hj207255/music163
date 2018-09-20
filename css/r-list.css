@@ -34,6 +34,9 @@ li{
 #imgLoading{
 	text-align: center;
 }
+#imgLoading>img{
+	width: 6vw;
+}
 .r-list .r-top{
 	padding: 8vw 2.67vw 8vw 4vw;
 	display: flex;
@@ -72,7 +75,14 @@ li{
 	flex: 1 1 auto;
 }
 
-
+#listLoading{
+	text-align: center;
+	height: 100vw;
+	line-height: 100vw;
+}
+#listLoading>img{
+	width: 10vw;
+}
 .r-lists{
 	margin-bottom: 14.41vw;
 }
@@ -118,11 +128,14 @@ li{
 }
 .r-list .r-lists .lists-row .lists-row-1 .sq{
 	display: inline-block;
-	width: 3.2vw;
-	height: 2.13vw;
+	width: 3.5vw;
+	height: 2.5vw;
 	background: url(../images/home-page-imgs/index_icon_2x.png) no-repeat;
 	background-size: 44.267vw 25.867vw;
 	margin-right: 1.07vw;
+}
+.r-list .r-lists .lists-row .lists-row-1 .sq.false{
+	display: none;
 }
 .r-list .r-lists .lists-row .lists-row-2{
 	width: 5.9vw;

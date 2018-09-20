@@ -195,6 +195,9 @@ body{
 	padding-bottom: 2.7vw;
 	color: #d33a31;
 }
+.footer-wrap .download-a{
+	display: block;
+}
 .footer-wrap .open,.footer-wrap .download{
 	border: 0.27vw solid #d33a31;
 	height: 10.7vw;
