@@ -22,11 +22,45 @@ $(function(){
 		})
 	}
 
+/***********************首页从leancloud获取图片*******************************/
+	var query = new AV.Query('images');
+  	query.find().then(function (imgresponse){
+  		// 在0-5中随机生成6个不重复数字
+	  	let imgarr=[]
+	  	for(let j=0;j<7;j++){
+  			for(let i=imgarr.length;i<7;i++){
+				let count=parseInt(Math.random()*6)
+		  		if(imgarr.indexOf(count)===-1){
+		  			imgarr.push(count)
+		  		}
+	  		}
+	  	}
+	  	let images=[]
+  		for(let i=0;i<imgresponse.length;i++){
+  			let $img=imgresponse[i].attributes
+  			images.push($img)
+  		}
+  		for(let i=0;i<imgarr.length;i++){
+  			let img=images[imgarr[i]]
+  			let $liImg=$(`
+  					<li>
+  						<a href="./r-list.html?id=${img.id}">
+							<img src="${img.bgurl}">
+							<span>${img.bgtext}</span>
+						</a>
+					</li>
+  				`)
+  			$liImg.appendTo('.r-imgs')
+			$('#recommendLoading').remove()
+	  	}
+
+  	})
+
 /***********************首页从leancloud获取内容*******************************/
 	// 使用leancloud获取歌曲列表
   	var query = new AV.Query('songs');
   	query.find().then(function (response) {
-  		// 随机生成10个不重复数字
+  		// 在0-15中随机生成10个不重复数字
 	  	let arr=[]
 	  	for(let j=0;j<10;j++){
   			for(let i=arr.length;i<10;i++){

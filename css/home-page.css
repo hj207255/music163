@@ -129,6 +129,9 @@ main .main-title{
 main .recommend{
 	margin-bottom: 6.4vw;
 }
+#recommendLoading{
+	text-align: center;
+}
 main .recommend ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -138,6 +141,9 @@ main .recommend li{
 	display: block;
 	width: 32.768vw;
 	padding-bottom: 4.267vw;
+}
+main .recommend li>a{
+	display: block;
 }
 main .recommend li img{
 	width: 32.768vw;
