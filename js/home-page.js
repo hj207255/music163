@@ -25,7 +25,7 @@ $(function(){
 /***********************首页从leancloud获取图片*******************************/
 	var query = new AV.Query('images');
   	query.find().then(function (imgresponse){
-  		// 在0-5中随机生成6个不重复数字
+  		// 随机排列，随机顺序生成推荐歌单
   		function randomsort(a, b) {
    			return Math.random()>.5 ? -1 : 1;
 		}
@@ -156,7 +156,7 @@ $(function(){
 			var query1 = new AV.Query('songs');
 	  		query1.contains('name', value);
 	  		var query2 = new AV.Query('songs');
-  			query2.equalTo('author', value);
+  			query2.contains('author', value);
   			var query = AV.Query.or(query1, query2);
 	  		query.find().then(function(results){
 	  			$('.search-content').empty()
