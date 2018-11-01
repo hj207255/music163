@@ -44,7 +44,7 @@ li{
 	align-items: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+	/*position: relative;*/
 	z-index: -2;
 }
 .r-list .r-top::after{
@@ -85,6 +85,7 @@ li{
 }
 .r-lists{
 	margin-bottom: 14.41vw;
+	height: 155vw;
 }
 .r-list .r-lists .r-text{
 	height: 6.13vw;
